@@ -1,0 +1,29 @@
+[Desktop Entry]
+#name the file in reverse DNS ie org.example.MyAppTotesRad.desktop
+#[<groupname>]
+#key names use A-Z, a-z, 0-9, case sensitive
+#key types are string, localestring, boolean, numeric
+#string ascii
+#localestring=user displayable utf8
+#boolean='true' or 'false'
+#numeric=valid float according to %f with scanf in c
+#
+#'\s \n \t \r \\ space, nl, tab, carriage return
+#seperate multivals with ; ie key=v1;v2;v3; \; for empty str at end
+#
+# Localized vals
+# lang_COUNTRY.ENCODING@MODIFIER 
+# _COUNTRY, .ENCODING, @MODIFIER are each optional, and you must include
+# a non local version
+#
+# Name:localestring required
+#
+# Type:string req #Application|Link|Directory
+ 
+Name=AppName
+Type=Application|Link|Directory
+Encoding=UTF-8
+Comment=Tooltip
+Exec=CommandThatLaunchesMe
+Icon=application.png
+Terminal=false
